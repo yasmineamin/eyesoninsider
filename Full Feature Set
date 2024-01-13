@@ -1,0 +1,4 @@
+merge_1 = ip_counts.merge(daily_counts_agg, on=ip_col, how='left')
+merge_2 = merge_1.merge(lean_weekend_counts_agg, on=ip_col, how='left')
+final_data = merge_2.merge(avg_timedelta_data, on=ip_col, how='left')
+final_data.head(10)
