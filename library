@@ -1,0 +1,24 @@
+import pandas as pd
+import numpy as np
+import datetime as dt
+import random
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# Set some parameters to get good visuals - style to ggplot and size to 15,10
+plt.style.use('ggplot')
+import matplotlib.style as style
+style.use('fivethirtyeight')
+plt.rcParams['figure.figsize'] = (15, 8)
+
+import seaborn as sns
+from sklearn.manifold import TSNE
+from mpl_toolkits.mplot3d import Axes3D
+
+from sklearn import preprocessing
+from sklearn.decomposition import PCA
+
+from sklearn.cluster import KMeans
+from sklearn.ensemble import IsolationForest
+from sklearn.svm import OneClassSVM
